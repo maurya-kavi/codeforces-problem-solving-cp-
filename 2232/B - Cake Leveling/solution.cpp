@@ -1,0 +1,63 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// macros
+#define ll long long
+#define yes cout << "YES
+"
+#define no cout << "NO
+"
+#define f(i, size) for (int i = 0; i < size; i++)
+#define iv(v, n)     \
+    vector<ll> v(n); \
+    f(i, n) cin >> v[i]
+ 
+#define INF 1000000000000000000LL
+#define mp make_pair
+#define mt make_tuple
+#define nline '
+'
+#define pb push_back
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define vii vector<pair<int, int>>
+ 
+void solve()
+{
+    int n;
+    cin >> n;
+    
+    long long c_sum = 0;
+    long long mah = 2e18; 
+ 
+    for (int i = 1; i <= n; ++i) {
+        long long a;
+        cin >> a;
+        
+        c_sum += a;
+        
+        long long ph = c_sum / i;
+       
+        if (ph < mah) {
+            mah = ph;
+        }
+        
+        cout << mah << " ";
+    }
+    cout << nline;
+}
+ 
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+ 
+    ll t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
