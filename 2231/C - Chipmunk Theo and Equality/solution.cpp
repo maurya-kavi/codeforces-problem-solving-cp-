@@ -1,0 +1,341 @@
+#include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+using namespace __gnu_pbds;
+ 
+// macros
+#define ll long long
+#define yes cout << "YES
+"
+#define no cout << "NO
+"
+#define f(i, size) for (int i = 0; i < size; i++)
+// #define ia(a, n)  \
+//     int a[n];     \
+//     f(i, n) cin >> a[i]
+ 
+#define iv(v, n)     \
+    vector<ll> v(n); \
+    f(i, n) cin >> v[i]
+ 
+// #define M (1000000007)
+#define INF 1000000000000000000LL
+#define mp make_pair
+#define mt make_tuple 
+#define nline '
+'
+#define pb push_back
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define vii vector<pair<int, int>>
+ 
+// Sorting
+bool sorta(const pair<int, int> &a, const pair<int, int> &b) { return (a.second < b.second); }
+bool sortd(const pair<int, int> &a, const pair<int, int> &b) { return (a.second > b.second); }
+bool comp1(const pair<int, int> &a, const pair<int, int> &b)
+{
+    if (a.first == b.first)
+    {
+        return a.second < b.second; // ascending order in second element
+    }
+    return a.first > b.first; // desc. order in first element
+}
+ 
+bool comp2(const pair<int, int> &a, const pair<int, int> &b)
+{
+    if (a.second == b.second)
+    {
+        return a.first < b.first; // ascending order in the first element
+    }
+    return a.second > b.second; // decending order in the second element
+}
+ 
+ 
+// Bits
+string decToBinary(int n)
+{
+    string s = "";
+    int i = 0;
+    while (n > 0)
+    {
+        s = to_string(n % 2) + s;
+        n = n / 2;
+        i++;
+    }
+    return s;
+}
+ 
+ll binaryToDecimal(string n)
+{
+    string num = n;
+    ll dec_value = 0;
+    int base = 1;
+    int len = num.length();
+    for (int i = len - 1; i >= 0; i--)
+    {
+        if (num[i] == '1')
+            dec_value += base;
+        base = base * 2;
+    }
+    return dec_value;
+}
+ 
+// Check
+bool isPrime(ll n)
+{
+    if (n <= 1)
+        return false;
+    if (n <= 3)
+        return true;
+    if (n % 2 == 0 || n % 3 == 0)
+        return false;
+    for (int i = 5; i * i <= n; i = i + 6)
+        if (n % i == 0 || n % (i + 2) == 0)
+            return false;
+    return true;
+}
+ 
+bool isPowerOfTwo(int n)
+{
+    if (n == 0)
+        return false;
+    return (ceil(log2(n)) == floor(log2(n)));
+}
+ 
+bool isPerfectSquare(ll x)
+{
+    if (x >= 0)
+    {
+        ll sr = sqrt(x);
+        return (sr * sr == x);
+    }
+    return false;
+}
+ 
+template <typename T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+ 
+ 
+//Modular arithmetic...................
+// const int M=1e9+7;
+const int M = 998244353;
+long long mod(long long x)
+{
+    return ((x % M + M) % M);
+}
+long long add(long long a, long long b)
+{
+    return mod(mod(a) + mod(b));
+}
+long long sub(long long a, long long b)
+{
+    return mod(mod(a) - mod(b));
+}
+long long mul(long long a, long long b)
+{
+    return mod(mod(a) * mod(b));
+}
+ 
+ll modPow(ll a, ll b)
+{
+    if (b == 0)
+        return 1LL;
+    if (b == 1)
+        return a % M;
+    ll res = 1;
+    while (b)
+    {
+        if (b % 2 == 1)
+            res = mul(res, a);
+        a = mul(a, a);
+        b = b / 2;
+    }
+    return res;
+}
+ 
+//factorials
+const int N = 3e5 + 2;
+int fact[N];
+ 
+void precalc()
+{
+    fact[0] = 1;
+    for (int i = 1; i < N; i++)
+    {
+        fact[i] = mul(fact[i - 1], i);
+    }
+}
+ 
+ll inv(ll x)
+{
+    return modPow(x, M - 2);
+}
+ 
+ll divide(ll a, ll b)
+{
+    return mul(a, inv(b));
+}
+ 
+ll nCr(ll n, ll r)
+{
+    return divide(fact[n], mul(fact[r], fact[n - r]));
+}
+ 
+//bit manipulation.........................
+int countSetBits(int n)
+{
+    return __builtin_popcount(n);
+}
+ 
+int msb(int x)
+{
+    return (31 - __builtin_clz(x));
+}
+ 
+ 
+void getPrimeFactors(ll n,vector<ll>&factors) {
+    while (n % 2 == 0) {
+        factors.push_back(2);
+        n /= 2;
+    }
+    for (int i = 3; i * i <= n; i += 2) {
+        while (n % i == 0) {
+            factors.push_back(i);
+            n /= i;
+        }
+    }
+    if (n > 1) {
+        factors.push_back(n);
+    }
+}
+ 
+void getfactors(ll n, vector<ll>&factors){
+    for(ll i=1;i*i<=n;i++){
+        if(n%i==0){
+            factors.push_back(i);
+            if(n/i!=i){
+                factors.push_back(n/i);
+            }
+        }
+    }
+}
+ 
+//.............................................................................
+// DSU , path compression and union by size
+const int N1=1e5+10;
+int parent[N1];
+int sz[N1];
+void make(int v){
+    parent[v]=v;
+    sz[v]=1;
+}
+ 
+int find(int v){
+    if(v==parent[v]) return v;
+    return parent[v]=find(parent[v]);  // path compression
+}
+ 
+ 
+void Union(int a, int b){
+    a=find(a);
+    b=find(b);
+    if(a!=b){
+        if(sz[a]<sz[b]){
+            swap(a,b);
+        }
+        parent[b]=a;
+        sz[a]+=sz[b];
+    }
+}
+ 
+//.............................................................................
+ 
+void solve(){
+    ll n;
+    cin >> n;
+    iv(arr, n);
+ 
+    // Vector to collect all {value, steps} generated by all elements
+    vector<pll> all_states;
+    // Preallocate to prevent dynamic resizing overhead (max paths are ~65 steps)
+    all_states.reserve(n * 65); 
+ 
+    f(i, n) {
+        ll curr = arr[i];
+        ll steps = 0;
+        vector<ll> seen;
+        seen.reserve(70);
+ 
+        while (true) {
+            // Check for cycle (like 1 <-> 2). Array is small enough that O(N) scan beats hashing
+            bool cycle = false;
+            f(j, seen.size()) {
+                if (seen[j] == curr) {
+                    cycle = true;
+                    break;
+                }
+            }
+            if (cycle) break;
+ 
+            seen.pb(curr);
+            all_states.pb({curr, steps});
+ 
+            if (curr % 2 == 0) {
+                curr /= 2;
+            } else {
+                curr += 1;
+            }
+            steps++;
+        }
+    }
+ 
+    // Sorting groups identical target values together
+    sort(all_states.begin(), all_states.end());
+ 
+    ll ans = -1;
+    int sz = all_states.size();
+    int i = 0;
+    
+    // Grouping block
+    while (i < sz) {
+        int j = i;
+        ll current_val = all_states[i].first;
+        ll total_cost = 0;
+        int count = 0;
+        
+        // Sum up costs for all elements that reached current_val
+        while (j < sz && all_states[j].first == current_val) {
+            total_cost += all_states[j].second;
+            count++;
+            j++;
+        }
+        
+        // If all N original elements reached this value, consider it a valid target
+        if (count == n) {
+            if (ans == -1 || total_cost < ans) {
+                ans = total_cost;
+            }
+        }
+        i = j; // Move to the next unique value block
+    }
+ 
+    cout << ans << nline;
+}
+ 
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+ 
+    precalc();
+ 
+    ll t;
+    cin >> t;
+ 
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
