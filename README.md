@@ -6,23 +6,51 @@
 
 | Total Problems | Topics |
 |---|---|
-| 1 | 3 |
+| 2 | 7 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
+- [binary search](#binary-search) (1)
 - [brute force](#brute-force) (1)
+- [constructive algorithms](#constructive-algorithms) (1)
+- [dp](#dp) (1)
+- [games](#games) (1)
 - [greedy](#greedy) (1)
-- [math](#math) (1)
+- [math](#math) (2)
 
 ---
+
+### binary search
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
 
 ### brute force
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
+
+### constructive algorithms
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
+
+### dp
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
+
+### games
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
 
 ### greedy
 
@@ -35,6 +63,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
+| 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
 
 ---
 
