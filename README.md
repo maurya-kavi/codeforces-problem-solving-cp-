@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 6 | 8 |
+| 7 | 9 |
 
 ---
 
@@ -18,7 +18,8 @@
 - [dp](#dp) (2)
 - [games](#games) (1)
 - [greedy](#greedy) (3)
-- [math](#math) (2)
+- [implementation](#implementation) (1)
+- [math](#math) (3)
 - [number theory](#number-theory) (1)
 
 ---
@@ -65,10 +66,17 @@
 | 2229D | [Me When Median Problem](https://codeforces.com/contest/2229/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2229/D%20-%20Me%20When%20Median%20Problem/solution.cpp) |
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
 
+### implementation
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2230A | [Optimal Purchase](https://codeforces.com/contest/2230/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2230/A%20-%20Optimal%20Purchase/solution.cpp) |
+
 ### math
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2230A | [Optimal Purchase](https://codeforces.com/contest/2230/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2230/A%20-%20Optimal%20Purchase/solution.cpp) |
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
 | 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
 
