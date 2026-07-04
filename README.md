@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 8 | 9 |
+| 9 | 10 |
 
 ---
 
@@ -14,12 +14,13 @@
 
 - [binary search](#binary-search) (2)
 - [brute force](#brute-force) (2)
-- [constructive algorithms](#constructive-algorithms) (2)
+- [constructive algorithms](#constructive-algorithms) (3)
+- [dfs and similar](#dfs-and-similar) (1)
 - [dp](#dp) (2)
 - [games](#games) (1)
 - [greedy](#greedy) (4)
 - [implementation](#implementation) (1)
-- [math](#math) (4)
+- [math](#math) (5)
 - [number theory](#number-theory) (2)
 
 ---
@@ -44,6 +45,13 @@
 |---|---------|------------|----------|
 | 2229C1 | [We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2229/C1%20-%20We%20Be%20Flipping%20(Easy%20Version)/solution.cpp) |
 | 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.cpp) |
+
+### dfs and similar
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.cpp) |
 
 ### dp
 
@@ -81,6 +89,7 @@
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
 | 2236D | [Brand New Tatar TV Show](https://codeforces.com/contest/2236/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/D%20-%20Brand%20New%20Tatar%20TV%20Show/solution.cpp) |
 | 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.cpp) |
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.cpp) |
 
 ### number theory
 
