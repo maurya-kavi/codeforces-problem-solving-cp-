@@ -6,25 +6,26 @@
 
 | Total Problems | Topics |
 |---|---|
-| 11 | 13 |
+| 12 | 14 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
 - [binary search](#binary-search) (2)
-- [brute force](#brute-force) (2)
+- [brute force](#brute-force) (3)
 - [constructive algorithms](#constructive-algorithms) (3)
-- [data structures](#data-structures) (1)
+- [data structures](#data-structures) (2)
 - [dfs and similar](#dfs-and-similar) (1)
 - [dp](#dp) (2)
 - [games](#games) (1)
 - [greedy](#greedy) (5)
-- [implementation](#implementation) (2)
+- [implementation](#implementation) (3)
 - [math](#math) (6)
 - [number theory](#number-theory) (2)
-- [sortings](#sortings) (1)
+- [sortings](#sortings) (2)
 - [strings](#strings) (1)
+- [two pointers](#two-pointers) (1)
 
 ---
 
@@ -41,6 +42,7 @@
 |---|---------|------------|----------|
 | 2236C | [Omsk Programmers](https://codeforces.com/contest/2236/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/C%20-%20Omsk%20Programmers/solution.cpp) |
 | 2236E | [Friendly Gifts](https://codeforces.com/contest/2236/problem/E) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2236/E%20-%20Friendly%20Gifts/solution.cpp) |
+| 2242C | [Unstable Elements](https://codeforces.com/contest/2242/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/C%20-%20Unstable%20Elements/solution.cpp) |
 
 ### constructive algorithms
 
@@ -55,6 +57,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.cpp) |
+| 2242C | [Unstable Elements](https://codeforces.com/contest/2242/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/C%20-%20Unstable%20Elements/solution.cpp) |
 
 ### dfs and similar
 
@@ -91,6 +94,7 @@
 |---|---------|------------|----------|
 | 2230A | [Optimal Purchase](https://codeforces.com/contest/2230/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2230/A%20-%20Optimal%20Purchase/solution.cpp) |
 | 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.cpp) |
+| 2242C | [Unstable Elements](https://codeforces.com/contest/2242/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/C%20-%20Unstable%20Elements/solution.cpp) |
 
 ### math
 
@@ -115,12 +119,19 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2242A | [Bigrams](https://codeforces.com/contest/2242/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/A%20-%20Bigrams/solution.cpp) |
+| 2242C | [Unstable Elements](https://codeforces.com/contest/2242/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/C%20-%20Unstable%20Elements/solution.cpp) |
 
 ### strings
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 2242A | [Bigrams](https://codeforces.com/contest/2242/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/A%20-%20Bigrams/solution.cpp) |
+
+### two pointers
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2242C | [Unstable Elements](https://codeforces.com/contest/2242/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/maurya-kavi/codeforces-problem-solving-cp-/blob/HEAD/2242/C%20-%20Unstable%20Elements/solution.cpp) |
 
 ---
 
